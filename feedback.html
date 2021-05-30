@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>feedback</title>
+	<style>
+		label{
+			font-size: 25px;
+		}
+		#fb{
+			font-size: 40px;
+		}
+		#greet{
+			font-size: 25px;
+			color: darkblue;
+		}
+		body{
+			background-color: aqua;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<p id="fb">Feedback</p>
+		<form>
+			<label for="review">Leave us a review</label><br><br>
+			<select id="review" name="review">
+				<option>Very Bad 😒</option>
+				<option>Bad 🤢</option>
+				<option selected="Good">Good 😊</option>
+				<option>Very Good 😍👌</option>
+				<option>Out of the World 😎😉👍</option>
+			</select><br><br>
+
+			
+			<button type="button"
+			onclick="document.getElementById('greet').style.display='block'">submit</button>
+
+			<p id="greet" style="display: none">Thank you..!!❤ <br>visit again👍</p>
+		</form>
+	</center>
+	
+
+</body>
+</html>
